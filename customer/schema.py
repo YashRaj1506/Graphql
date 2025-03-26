@@ -5,7 +5,7 @@ from . models import Client
 
 class ClientType(DjangoObjectType):
     class Meta:
-        modedl = Client
+        model = Client
         fields = ("id", "first_name", "last_name", "city")
 
 class Query(graphene.ObjectType):
